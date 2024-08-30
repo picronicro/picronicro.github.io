@@ -1,0 +1,46 @@
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+
+    background-color: rgb(61, 61, 61);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+
+#content {
+    margin-bottom: 5vh;
+    width: 60vw;
+    height: 80vh;
+
+    border-style: outset;
+}
+
+
+
+#navbar {
+    position: fixed;
+    bottom: 8px;
+    padding: 6px;
+    background-color: lightgray;
+    border-style: outset;
+}
+
+#navbar button {
+    padding: 4px;
+    width: 4.5rem;
+    background-color: lightgray;
+    border: 2px outset;
+}
+
+#navbar button:active {
+    border: 2px inset;
+}
