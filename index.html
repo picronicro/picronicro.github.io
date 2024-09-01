@@ -3,18 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>UWIS Lab</title>
+
+    <!--  stylesheets  -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/anim_expand.css">
+
+    <!--  Handjet font, https://fonts.google.com/share?selection.family=Handjet:wght@100..900  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div id="content"></div>
-    </div>
+    <div class="grid">
+        <div class="container">
+            <div id="content">
+                <div class="header">
+                    <h4 class="header_text">Header</h4>
+                    <button class="btn_expand"><img src="assets/icons/expand.png" alt=""></button>
+                </div>
 
-    <div id="navbar">
-        <button>Home</button>
-        <button>Materials</button>
-        <button>Home</button>
-        <button>Home</button>
+                
+            </div>
+        </div>
+
+        <div id="navbar">
+            <button>Home</button>
+            <button>Materials</button>
+            <button>Home</button>
+            <button>Home</button>
+        </div>
     </div>
 </body>
+
+<script src="js/main.js"></script>
+
 </html>

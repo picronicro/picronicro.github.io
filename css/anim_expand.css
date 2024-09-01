@@ -1,0 +1,31 @@
+/* CONTENT WINDOW EXPANSION ANIMATION */
+/* should be applied to the .grid contained div */
+
+.grid_expand {
+    width: 80vw;
+    grid-gap: 0;
+    grid-template-rows: auto 0;
+    transition: .5s;
+}
+
+.blur_bg {
+    filter: blur(5px);
+}
+
+.hide_navbar {
+    transform: translate(0, 500%);
+    transition: .3s;
+}
+
+/*.grid_expand #navbar {
+    position: fixed;
+    left: 50%;
+    bottom: 16px;
+    transform: translate(-50%, 0);
+}*/
+
+/*
+    стоило бы сделать прозрачный див под размер навбара
+    а сам навбар вывести как position: fixed;
+    таким образом, можно будет делать нормальную анимацию ресайза, просто уменьшая тот див через transition
+ */
