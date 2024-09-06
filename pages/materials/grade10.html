@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
     <title>UWIS Lab</title>
 
     <!--  stylesheets  -->
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/anim_expand.css">
+    <link rel="stylesheet" href="../../css/content_container.css">
 
     <!--  Handjet font, https://fonts.google.com/share?selection.family=Handjet:wght@100..900  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,9 +16,25 @@
 </head>
 <body>
     <div class="container">
-        <div class="greeting">
-            <img src="./assets/logo.png" alt="globe logo">
-            <h1>ICT Lab</h1>
+        <div id="content_window">
+            <div class="header">
+                <h4 class="header_text">Header</h4>
+                <button class="btn_expand"><img src="../assets/icons/expand.png" alt=""></button>
+            </div>
+
+            <div class="content">
+
+                <p>Grade 10</p>
+                <ul>
+                    <li><a href="">link</a></li>
+                    <li><a href="">link</a></li>
+                    <li><a href="">link</a></li>
+                    <li><a href="">link</a></li>
+                    <li><a href="">link</a></li>
+                </ul>
+                <!-- Put all the content in that div -->
+
+            </div>
         </div>
     </div>
 
@@ -34,7 +50,7 @@
 
         <div class="dropdown">
             <div class="context">
-                <a class="context_link" href="pages/materials/grade10.html">Grade 10</a>
+                <a class="context_link" href="">link</a>
                 <a class="context_link" href="">link</a>
                 <a class="context_link" href="">link</a>
             </div>
@@ -49,7 +65,6 @@
             </div>
             <button>Home</button>
         </div>
-        
 
         <div class="dropdown">
             <div class="context">
@@ -62,5 +77,6 @@
 
     </div>
 </body>
-<script src="js/navbar.js"></script>
+<script src="../../js/content_page.js"></script>
+<script src="../../js/navbar.js"></script>
 </html>

@@ -1,0 +1,15 @@
+body {
+    backdrop-filter: brightness(20%) blur(6px) !important;
+}
+
+.container {
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.greeting h1 {
+    color: white;
+    text-align: center;
+}
