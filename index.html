@@ -2,6 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="UWIS Computer Lab">
+    <meta name="keywords" content="ict, lab, uwis, computer, programming">
+    <meta name="author" content="eldeg">
 
     <title>UWIS Lab</title>
 
@@ -16,50 +20,57 @@
 </head>
 <body>
     <div class="container">
-        <div class="greeting">
+        <div id="greeting">
             <img src="./assets/logo.png" alt="globe logo">
             <h1>ICT Lab</h1>
         </div>
     </div>
 
     <div id="navbar">
+        <div id="nav_home" class="btn_tiny" style="margin-right: 12px">
+            <button>
+                <img src="/assets/icons/navbar/windows-1.png" alt="">
+            </button>
+        </div>
+
         <div class="dropdown">
             <div class="context">
                 <a class="context_link" href="">link</a>
                 <a class="context_link" href="">link</a>
                 <a class="context_link" href="">link</a>
             </div>
-            <button>Home</button>
+            <button>Literacy</button>
         </div>
-
         <div class="dropdown">
             <div class="context">
-                <a class="context_link" href="pages/materials/grade10.html">Grade 10</a>
+                <a class="context_link" href="pages/_template.html">Grade 10</a>
                 <a class="context_link" href="">link</a>
                 <a class="context_link" href="">link</a>
             </div>
             <button>Materials</button>
         </div>
-
         <div class="dropdown">
             <div class="context">
                 <a class="context_link" href="">link</a>
                 <a class="context_link" href="">link</a>
                 <a class="context_link" href="">link</a>
             </div>
-            <button>Home</button>
+            <button>IGCSE</button>
         </div>
-        
-
         <div class="dropdown">
             <div class="context">
                 <a class="context_link" href="">link</a>
                 <a class="context_link" href="">link</a>
                 <a class="context_link" href="">link</a>
             </div>
-            <button>Home</button>
+            <button>Other</button>
         </div>
 
+        <div id="nav_params" class="btn_tiny" style="margin-left: 12px">
+            <button>
+                <img src="/assets/icons/navbar/gears-1.png" alt="">
+            </button>
+        </div>
     </div>
 </body>
 <script src="js/navbar.js"></script>

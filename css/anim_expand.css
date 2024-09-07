@@ -8,13 +8,11 @@
 }
 
 .blur_bg {
-    backdrop-filter: blur(5px) brightness(60%);
-    transition: .5s;
+    backdrop-filter: brightness(20%);
 }
 
 .hide_navbar {
     bottom: -100px !important;
-    transition: .3s;
 }
 
 /*.grid_expand #navbar {

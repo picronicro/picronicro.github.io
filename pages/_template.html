@@ -2,12 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="UWIS Computer Lab">
+    <meta name="keywords" content="ict, lab, uwis, computer, programming">
+    <meta name="author" content="eldeg">
+
     <title>UWIS Lab</title>
 
     <!--  stylesheets  -->
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/anim_expand.css">
-    <link rel="stylesheet" href="../css/content_container.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/content_container.css">
+    <link rel="stylesheet" href="/css/anim_expand.css">
 
     <!--  Handjet font, https://fonts.google.com/share?selection.family=Handjet:wght@100..900  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,19 +24,65 @@
         <div id="content_window">
             <div class="header">
                 <h4 class="header_text">Header</h4>
-                <button class="btn_expand"><img src="../assets/icons/expand.png" alt=""></button>
+                <button class="btn_expand"><img src="/assets/icons/expand.png" alt=""></button>
             </div>
 
-            <iframe src="materials/test.html" class="content" frameborder="0"></iframe>
+            <div class="content">
+
+                <h1>Replace the content</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, dolorum?</p>
+
+            </div>
         </div>
     </div>
 
     <div id="navbar">
-        <button>Home</button>
-        <button>Materials</button>
-        <button>Home</button>
-        <button>Home</button>
+        <div id="nav_home" class="btn_tiny" style="margin-right: 12px">
+            <button>
+                <img src="/assets/icons/navbar/windows-1.png" alt="">
+            </button>
+        </div>
+
+        <div class="dropdown">
+            <div class="context">
+                <a class="context_link" href="">link</a>
+                <a class="context_link" href="">link</a>
+                <a class="context_link" href="">link</a>
+            </div>
+            <button>Literacy</button>
+        </div>
+        <div class="dropdown">
+            <div class="context">
+                <a class="context_link" href="/pages/materials/grade10.html">Grade 10</a>
+                <a class="context_link" href="">link</a>
+                <a class="context_link" href="">link</a>
+            </div>
+            <button>Materials</button>
+        </div>
+        <div class="dropdown">
+            <div class="context">
+                <a class="context_link" href="">link</a>
+                <a class="context_link" href="">link</a>
+                <a class="context_link" href="">link</a>
+            </div>
+            <button>IGCSE</button>
+        </div>
+        <div class="dropdown">
+            <div class="context">
+                <a class="context_link" href="">link</a>
+                <a class="context_link" href="">link</a>
+                <a class="context_link" href="">link</a>
+            </div>
+            <button>Other</button>
+        </div>
+
+        <div id="nav_params" class="btn_tiny" style="margin-left: 12px">
+            <button>
+                <img src="/assets/icons/navbar/gears-1.png" alt="">
+            </button>
+        </div>
     </div>
 </body>
+<script src="../js/navbar.js"></script>
 <script src="../js/content_page.js"></script>
 </html>

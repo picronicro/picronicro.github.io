@@ -1,8 +1,8 @@
-let dropdowns = document.getElementsByClassName("dropdown");
+const dropdowns = document.getElementsByClassName("dropdown");
 
 let showDropdown = e => {
     const dropdown = e.target.parentElement;
-    let context = dropdown.getElementsByClassName("context")[0]
+    let context = dropdown.getElementsByClassName("context")[0];
     context.classList.add("show");
 }
 
@@ -12,10 +12,13 @@ for (let d of dropdowns) {
 
 document.body.addEventListener("click", e => {
     for (let d of dropdowns) {
-        if (d.contains(e.target)) {
-            console.log("inside")
-        } else {
-            d.getElementsByClassName("context")[0].classList.remove("show")
+        if (!d.contains(e.target)) {
+            d.getElementsByClassName("context")[0].classList.remove("show");
         }
     }
 })
+
+// navbar tiny buttons
+document.getElementById("nav_home").onclick = () => {
+    window.location.href = "/index.html";
+}

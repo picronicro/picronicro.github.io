@@ -3,13 +3,12 @@ body {
 }
 
 .container {
-    padding: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.greeting h1 {
+#greeting h1 {
     color: white;
     text-align: center;
 }
