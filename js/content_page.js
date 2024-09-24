@@ -6,7 +6,7 @@ btnHide.onclick = function () {
     let isExpanded = container.classList.contains("expand");
 
     let icon = btnHide.getElementsByTagName("img")[0];
-    isExpanded ? icon.src = "../assets/icons/expand.png" : icon.src = "../assets/icons/shrink.png";
+    isExpanded ? icon.src = "/assets/icons/expand.png" : icon.src = "/assets/icons/shrink.png";
     isExpanded ? container.classList.remove("expand") : navBar.classList.add("hide_navbar");
     isExpanded ? setTimeout(() => navBar.classList.remove("hide_navbar"), 100)
         : container.classList.add("expand");

@@ -7,7 +7,7 @@ body {
     image-rendering: pixelated;
     background-image: url("../assets/bgs/setup.png");
     overflow: hidden;
-    backdrop-filter: none;
+    backdrop-filter: brightness(60%);
 
     transition: 1s backdrop-filter;
 }
@@ -50,6 +50,10 @@ button:active {
     color: #424242;
     box-shadow: -1px -1px black;
     filter: none;
+}
+
+h1 {
+    margin: 5px 0;
 }
 
 /* leave .container for homepage without #content*/
@@ -96,6 +100,7 @@ button:active {
     image-rendering: pixelated;
     width: 26px;
     height: 26px;
+    pointer-events: none;
 }
 
 /* CONTEXT MENU */
@@ -125,10 +130,37 @@ button:active {
 
 .context_link:hover {
     background-color: #1a0094;
-    color: white;
+    color: white !important;
 }
 
 .context_link:active {
     outline: 2px dashed white;
     outline-offset: -1px;
+}
+
+/* separate context for options button */
+#nav_options .context_link {
+    color: black;
+    text-decoration: none;
+}
+
+/* ABOUT DIALOG WINDOW */
+#dialog_about {
+    padding: 0;
+    bottom: 50%;
+    transform: translateY(50%);
+
+    border: 2px outset buttonface;
+    border-right-color: #424242;
+    border-bottom-color: #424242;
+    background: silver;
+    color: black;
+}
+
+#dialog_about div {
+    padding: 12px;
+}
+
+dialog::backdrop {
+    backdrop-filter: brightness(30%);
 }

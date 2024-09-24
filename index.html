@@ -11,6 +11,7 @@
 
     <!--  stylesheets  -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/content_container.css">
     <link rel="stylesheet" href="css/homepage.css">
 
     <!--  Handjet font, https://fonts.google.com/share?selection.family=Handjet:wght@100..900  -->
@@ -26,8 +27,8 @@
         </div>
     </div>
 
-    <div id="navbar">
-        <div id="nav_home" class="btn_tiny" style="margin-right: 12px">
+    <nav id="navbar">
+        <div id="nav_home" class="btn_tiny" style="margin-right: 12px" title="Homepage">
             <button>
                 <img src="/assets/icons/navbar/windows-1.png" alt="">
             </button>
@@ -35,43 +36,58 @@
 
         <div class="dropdown">
             <div class="context">
-                <a class="context_link" href="">link</a>
-                <a class="context_link" href="">link</a>
-                <a class="context_link" href="">link</a>
+                <a class="context_link" href="">Computer Basics</a>
+                <a class="context_link" href="">Internet Basics</a>
             </div>
             <button>Literacy</button>
         </div>
         <div class="dropdown">
             <div class="context">
-                <a class="context_link" href="pages/template.html">Grade 10</a>
-                <a class="context_link" href="">link</a>
-                <a class="context_link" href="">link</a>
+                <a class="context_link" href="pages/template.html">Grade 8</a>
+                <a class="context_link" href="">Grade 9</a>
+                <a class="context_link" href="">Grade 10</a>
+                <a class="context_link" href="">Grade 11 and 12</a>
             </div>
             <button>Materials</button>
         </div>
         <div class="dropdown">
             <div class="context">
-                <a class="context_link" href="">link</a>
-                <a class="context_link" href="">link</a>
-                <a class="context_link" href="">link</a>
+                <a class="context_link" href="">Theory</a>
+                <a class="context_link" href="">Practical</a>
+                <a class="context_link" href="">Past Papers</a>
             </div>
             <button>IGCSE</button>
         </div>
         <div class="dropdown">
             <div class="context">
-                <a class="context_link" href="">link</a>
-                <a class="context_link" href="">link</a>
-                <a class="context_link" href="">link</a>
+                <a class="context_link" href="pages/other/tables.html">Tables</a>
+                <a style="text-decoration: none; color: black" class="context_link" href="#">─────────────</a>
+                <a class="context_link" href="">Useful Websites</a>
+                <a class="context_link" href="">Events</a>
             </div>
             <button>Other</button>
         </div>
 
-        <div id="nav_params" class="btn_tiny" style="margin-left: 12px">
+        <div id="nav_options" class="dropdown btn_tiny" style="margin-left: 12px">
+            <div class="context">
+                <a id="opt_bg" class="context_link" href="#">Set Plain Background</a>
+                <a id="opt_about" class="context_link" href="#">About</a>
+            </div>
             <button>
                 <img src="/assets/icons/navbar/gears-1.png" alt="">
             </button>
         </div>
-    </div>
+    </nav>
+    <dialog id="dialog_about">
+        <header class="header">
+            <h4 class="header_text">About</h4>
+        </header>
+        <div>
+            <p>This website was made during the Web Authoring Project on ICT.</p>
+            <p>Author: Eliaz Degenbaev</p>
+            <button>OK</button>
+        </div>
+    </dialog>
 </body>
 <script src="js/navbar.js"></script>
 </html>

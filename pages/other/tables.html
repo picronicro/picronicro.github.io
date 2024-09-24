@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="/css/content_container.css">
     <link rel="stylesheet" href="/css/anim_expand.css">
 
+    <link rel="stylesheet" href="/css/other/tables.css">
+
     <!--  Handjet font, https://fonts.google.com/share?selection.family=Handjet:wght@100..900  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,10 +30,47 @@
             </header>
 
             <main>
+                <h1>Day 8 Tables</h1>
 
-                <h1>Replace the content</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, dolorum?</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                        </tr>
+                    </thead>
 
+                    <tbody>
+                        <tr>
+                            <td>Motherboard TUF Z790</td>
+                            <td>$240</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>RAM CORSAIR 32GB 3200MHz</td>
+                            <td>$120</td>
+                            <td>55</td>
+                        </tr>
+                        <tr>
+                            <td>CPU AMD Ryzen 9 6900S</td>
+                            <td>$550</td>
+                            <td>35</td>
+                        </tr>
+                        <tr>
+                            <td>GPU Palit NVidia GTX 5090TI 64GB</td>
+                            <td>$999.99</td>
+                            <td>1</td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td>Total Quantity</td>
+                            <td colspan="2">111</td>
+                        </tr>
+                    </tfoot>
+                </table>
             </main>
         </div>
     </div>
@@ -98,6 +137,6 @@
         </div>
     </dialog>
 </body>
-<script src="../js/navbar.js"></script>
-<script src="../js/content_page.js"></script>
+<script src="/js/navbar.js"></script>
+<script src="/js/content_page.js"></script>
 </html>
