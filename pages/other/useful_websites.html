@@ -6,13 +6,16 @@
     <meta name="description" content="UWIS Computer Lab">
     <meta name="keywords" content="ict, lab, uwis, computer, programming">
     <meta name="author" content="eldeg">
+    <base target="_blank">
 
-    <title>UWIS Lab</title>
+    <title>UWIS Lab - Useful websites</title>
 
     <!--  stylesheets  -->
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/content_container.css">
     <link rel="stylesheet" href="/css/anim_expand.css">
+
+    <link rel="stylesheet" href="/css/other/useful_websites.css">
 
     <!--  Handjet font, https://fonts.google.com/share?selection.family=Handjet:wght@100..900  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,15 +26,79 @@
     <div class="container">
         <div id="content_window">
             <header class="header">
-                <h4 class="header_text">Header</h4>
+                <h4 class="header_text">Useful Websites</h4>
                 <button class="btn_expand"><img src="/assets/icons/expand.png" alt=""></button>
             </header>
 
             <main>
-
-                <h1>Replace the content</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, dolorum?</p>
-
+                <table>
+                    <tr>
+                        <td>
+                            <a href="https://uwis.edupage.org/login/">
+                                <img src="/assets/logos/edupage.jpg" alt="Logo">
+                                <p>Edupage</p>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://uwis.edu.kg/">
+                                <img src="/assets/uwis_logo.png" alt="Logo">
+                                <p>UWIS Website</p>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://www.typing.com/">
+                                <img src="/assets/logos/typing.png" alt="Logo">
+                                <p>Typing.com</p>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://codehs.com/">
+                                <img src="/assets/logos/codehs.png" alt="Logo">
+                                <p>CodeHS</p>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://www.udemy.com/">
+                                <img src="/assets/logos/udemy.png" alt="Logo">
+                                <p>Udemy</p>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://www.coursera.org/">
+                                <img src="/assets/logos/coursera.jpg" alt="Logo">
+                                <p>Coursera</p>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://www.edx.org/">
+                                <img src="/assets/logos/edx.png" alt="Logo">
+                                <p>edX</p>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://www.w3schools.com/">
+                                <img src="/assets/logos/w3.png" alt="Logo">
+                                <p>w3schools</p>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <a href="https://zerotomastery.io/">
+                                <img src="/assets/logos/ztm.png" alt="Logo">
+                                <p>Zero To Mastery</p>
+                            </a>
+                        </td>
+                        <td colspan="2">
+                            <a href="https://developer.mozilla.org/en-US/">
+                                <img src="/assets/logos/mdn.png" alt="Logo">
+                                <p>MDN Web docs</p>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
             </main>
         </div>
     </div>
@@ -101,4 +168,10 @@
 </body>
 <script src="/js/navbar.js"></script>
 <script src="/js/content_page.js"></script>
+<script>
+    const images = document.getElementsByTagName("img")
+    for (let img of images) {
+        img.setAttribute('draggable', false);
+    }
+</script>
 </html>

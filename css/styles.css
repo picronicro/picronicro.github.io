@@ -9,6 +9,8 @@ body {
     overflow: hidden;
     backdrop-filter: brightness(60%);
 
+    font-family: monospace;
+
     transition: 1s backdrop-filter;
 }
 
@@ -32,6 +34,22 @@ body {
 
     transition: .5s;
 }
+@media screen and (max-width: 800px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .container {
+        padding: 0;
+        width: 100vw;
+    }
+    .btn_expand {
+        display: none;
+    }
+}
+
 
 button {
     padding: 4px;
@@ -85,9 +103,9 @@ h1 {
 
 #navbar button {
     width: 100%;
-    font-family: "Handjet", sans-serif;
-    font-size: 24px;
-    font-weight: 500;
+    height: 100%;
+    font-family: "Sysfont", sans-serif;
+    font-size: 22px;
 }
 
 #navbar .btn_tiny button {
@@ -101,6 +119,14 @@ h1 {
     width: 26px;
     height: 26px;
     pointer-events: none;
+}
+
+@media screen and (max-width: 800px) {
+    #navbar {
+        position: static;
+        transform: none;
+        margin: 0;
+    }
 }
 
 /* CONTEXT MENU */
@@ -126,6 +152,10 @@ h1 {
 .context_link {
     user-select: none;
     padding: 4px;
+
+    font-family: "Sysfont", monospace;
+    font-size: 22px;
+    text-decoration: none;
 }
 
 .context_link:hover {
@@ -163,4 +193,13 @@ h1 {
 
 dialog::backdrop {
     backdrop-filter: brightness(30%);
+}
+
+/* FONTS */
+@font-face {
+    font-family: 'Sysfont';
+    src: url('/assets/fonts/sysfont/sysfont.woff2') format('woff2'),
+    url('/assets/fonts/sysfont/sysfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
