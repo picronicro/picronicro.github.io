@@ -106,6 +106,7 @@ h1 {
     height: 100%;
     font-family: "Sysfont", sans-serif;
     font-size: 22px;
+    text-overflow: clip;
 }
 
 #navbar .btn_tiny button {
@@ -126,6 +127,7 @@ h1 {
         position: static;
         transform: none;
         margin: 0;
+        /*grid-template-columns: 52px 10vw 10vw 10vw 10vw 52px;*/
     }
 }
 

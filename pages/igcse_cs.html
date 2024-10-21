@@ -6,9 +6,8 @@
     <meta name="description" content="UWIS Computer Lab">
     <meta name="keywords" content="ict, lab, uwis, computer, programming">
     <meta name="author" content="eldeg">
-    <base target="_blank">
 
-    <title>UWIS Lab - Grade 8</title>
+    <title>UWIS Lab</title>
 
     <!--  stylesheets  -->
     <link rel="stylesheet" href="/css/styles.css">
@@ -24,31 +23,13 @@
     <div class="container">
         <div id="content_window">
             <header class="header">
-                <h4 class="header_text">Grade 8</h4>
+                <h4 class="header_text">Header</h4>
                 <button class="btn_expand"><img src="/assets/icons/expand.png" alt=""></button>
             </header>
 
             <main>
-                <h1>Grade 8</h1>
-
-                <h2>New Edition</h2>
-                <ul>
-                    <li><a href="https://drive.google.com/file/d/19NKI-3X2S26tWnvrjVptpuqXmYIly8YI/view">Theory Workbook</a></li>
-                    <li><a href="https://drive.google.com/file/d/1s_nMzL6WwrUDeeRgc-HG43ZfZ9FTEQ4W/view">Practical Workbook</a></li>
-                    <li><a href="https://drive.google.com/file/d/1K5Gqc_PvmfBYD7becFrWesYmvYl9wyPg/view">IGCSE ICT 0417 book - Hodder</a></li>
-                    <li><a href="https://drive.google.com/drive/u/0/folders/1boBfmraUbBM4OMrKKvBEiKEJRPo905yM">Chapter resource files</a></li>
-                </ul>
-
-                <h2>Old Edition</h2>
-                <ul>
-                    <li><a href="https://sites.google.com/view/ictuct/igcse/igcse-practical?authuser=0">Practical (Chapters: 11 - 21)</a></li>
-                    <li><a href="https://sites.google.com/view/ictuct/igcse/igcse-theory?authuser=0">Theory (Chapters: 1 - 10)</a></li>
-                    <li><a href="https://drive.google.com/file/d/1mTBuzLrXM6DagrpAYc6mlRIcW3z-C0fV/view">IGCSE ICT 0417 book - Hodder</a></li>
-                    <li><a href="https://drive.google.com/file/d/1qXi-jvuHtj_JF9XwSzQy-mBxLhK3oZHB/view">Revision Guide- Hodder</a></li>
-                    <li><a href="https://drive.google.com/file/d/1oGrDJNdlESH_fli3jLwAoqdDtS7Tx7G2/view">Practical Answersheet</a></li>
-                    <li><a href="https://drive.google.com/file/d/1-PxmBRlzKeYLR23Jw5qe153vVnPe6jx-/view">Theory Answersheet</a></li>
-                    <li><a href="https://drive.google.com/drive/u/0/folders/1TRl5ACnbIRku2BHxfjEWOfsC5AdEL60q">Chapter resource files</a></li>
-                </ul>
+                <img src="/assets/logo.png" alt="logo" width="300" style="filter: invert(100%)">
+                <h1>Nothing to show at the moment.</h1>
             </main>
         </div>
     </div>
@@ -113,4 +94,24 @@
 </body>
 <script src="/js/navbar.js"></script>
 <script src="/js/content_page.js"></script>
+
+<style>
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        height: 90%;
+    }
+
+    main img {
+        animation: rotateAnimation 6s linear infinite;
+    }
+
+    @keyframes rotateAnimation {
+        from {transform: rotate3d(1, -0.13, -0.29, -180deg);}
+        to {transform: rotate3d(1, -0.13, -0.29, 180deg);}
+    }
+</style>
 </html>
